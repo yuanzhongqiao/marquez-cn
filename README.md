@@ -1,176 +1,222 @@
-<div align="center">
-  <img src="./docs/assets/images/marquez-logo.png" width="500px" />
-  <a href="https://lfaidata.foundation/projects">
-    <img src="./docs/assets/images/lfaidata-project-badge-incubation-black.png" width="125px" />
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="/MarquezProject/marquez/blob/main/docs/assets/images/marquez-logo.png"><img src="/MarquezProject/marquez/raw/main/docs/assets/images/marquez-logo.png" width="500px" style="max-width: 100%;"></a>
+  <a href="https://lfaidata.foundation/projects" rel="nofollow">
+    <img src="/MarquezProject/marquez/raw/main/docs/assets/images/lfaidata-project-badge-incubation-black.png" width="125px" style="max-width: 100%;">
   </a>
 </div>
-
-Marquez is an open source **metadata service** for the **collection**, **aggregation**, and **visualization** of a data ecosystem's metadata. It maintains the provenance of how datasets are consumed and produced, provides global visibility into job runtime and frequency of dataset access, centralization of dataset lifecycle management, and much more. Marquez was released and open sourced by [WeWork](https://www.wework.com).
-
-## Badges
-
-[![CircleCI](https://circleci.com/gh/MarquezProject/marquez/tree/main.svg?style=shield)](https://circleci.com/gh/MarquezProject/marquez/tree/main)
-[![codecov](https://codecov.io/gh/MarquezProject/marquez/branch/main/graph/badge.svg)](https://codecov.io/gh/MarquezProject/marquez/branch/main)
-[![status](https://img.shields.io/badge/status-active-brightgreen.svg)](#status)
-[![Slack](https://img.shields.io/badge/slack-chat-blue.svg)](https://join.slack.com/t/marquezproject/shared_invite/zt-29w4n8y45-Re3B1KTlZU5wO6X6JRzGmA)
-[![license](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](https://raw.githubusercontent.com/MarquezProject/marquez/main/LICENSE)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-[![maven](https://img.shields.io/maven-central/v/io.github.marquezproject/marquez-api.svg)](https://search.maven.org/search?q=g:io.github.marquezproject)
-[![docker](https://img.shields.io/badge/docker-hub-blue.svg?style=flat)](https://hub.docker.com/r/marquezproject/marquez)
-[![Known Vulnerabilities](https://snyk.io/test/github/MarquezProject/marquez/badge.svg)](https://snyk.io/test/github/MarquezProject/marquez)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5160/badge)](https://bestpractices.coreinfrastructure.org/projects/5160)
-
-## Status
-
-Marquez is an [LF AI & Data Foundation](https://lfaidata.foundation/projects/marquez) incubation project under active development, and we'd love your help!
-
-## Adopters
-
-Want to be added? Send a pull request our way!
-
-* [Astronomer](https://astronomer.io)
-* [Datakin](https://datakin.com)
-* [Northwestern Mutual](https://www.northwesternmutual.com)
-
-## Try it!
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/MarquezProject/marquez)
-
-## Quickstart
-
-Marquez provides a simple way to collect and view _dataset_, _job_, and _run_ metadata using [OpenLineage](https://openlineage.io). The easiest way to get up and running is with Docker. From the base of the Marquez repository, run:
-
-```
-$ ./docker/up.sh
-```
-
-> **Tip:** Use the `--build` flag to build images from source, and/or `--seed` to start Marquez with sample lineage metadata. For a more complete example using the sample metadata, please follow our [quickstart](https://marquezproject.github.io/marquez/quickstart.html) guide.
-
-> **Note:** Port 5000 is now reserved for MacOS. If running locally on MacOS, you can run `./docker/up.sh --api-port 9000` to configure the API to listen on port 9000 instead. Keep in mind that you will need to update the URLs below with the appropriate port number.
-
-**`WEB UI`**
-
-You can open [http://localhost:3000](http://localhost:3000) to begin exploring the Marquez Web UI. The UI enables you to discover dependencies between jobs and the datasets they produce and consume via the lineage graph, view run metadata of current and previous job runs, and much more!
-
-<p align="center">
-  <img src="./web/docs/demo.gif">
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez 是一种开源元</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据服务，</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于</font><font style="vertical-align: inherit;">数据生态系统元数据的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">收集</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聚合</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可视化。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它维护数据集的消费和生成方式的来源，提供作业运行时和数据集访问频率的全局可见性、数据集生命周期管理的集中化等等。</font></font><a href="https://www.wework.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez 由WeWork</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布并开源</font><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-badges" class="anchor" aria-hidden="true" tabindex="-1" href="#badges"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">徽章</font></font></h2>
+<p dir="auto"><a href="https://circleci.com/gh/MarquezProject/marquez/tree/main" rel="nofollow"><img src="https://camo.githubusercontent.com/0c2add307b9e6a302b50ace70f87de8685c6084eb409e957f2e231f4fe23e854/68747470733a2f2f636972636c6563692e636f6d2f67682f4d61727175657a50726f6a6563742f6d61727175657a2f747265652f6d61696e2e7376673f7374796c653d736869656c64" alt="循环CI" data-canonical-src="https://circleci.com/gh/MarquezProject/marquez/tree/main.svg?style=shield" style="max-width: 100%;"></a>
+<a href="https://codecov.io/gh/MarquezProject/marquez/branch/main" rel="nofollow"><img src="https://camo.githubusercontent.com/898037e11d72265e9c0cde4dd0e9bc7e75503dffa2c97f69cf08f3afc31e6da6/68747470733a2f2f636f6465636f762e696f2f67682f4d61727175657a50726f6a6563742f6d61727175657a2f6272616e63682f6d61696e2f67726170682f62616467652e737667" alt="代码科夫" data-canonical-src="https://codecov.io/gh/MarquezProject/marquez/branch/main/graph/badge.svg" style="max-width: 100%;"></a>
+<a href="#status"><img src="https://camo.githubusercontent.com/a0a96cae1a29609d1bfc4a0872769e6d2a7477b54f35d8b3a9304eaa5bfe31de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617475732d6163746976652d627269676874677265656e2e737667" alt="地位" data-canonical-src="https://img.shields.io/badge/status-active-brightgreen.svg" style="max-width: 100%;"></a>
+<a href="https://join.slack.com/t/marquezproject/shared_invite/zt-29w4n8y45-Re3B1KTlZU5wO6X6JRzGmA" rel="nofollow"><img src="https://camo.githubusercontent.com/a9ef179ae93105a4d2a845643d17abb8f5d28bfeda4a5001de46291d5431af9d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d636861742d626c75652e737667" alt="松弛" data-canonical-src="https://img.shields.io/badge/slack-chat-blue.svg" style="max-width: 100%;"></a>
+<a href="https://raw.githubusercontent.com/MarquezProject/marquez/main/LICENSE" rel="nofollow"><img src="https://camo.githubusercontent.com/60a41e393583e46cafea156109ad319964506b6d6f457354dbbfbcb314b337bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4170616368655f322e302d626c75652e737667" alt="执照" data-canonical-src="https://img.shields.io/badge/license-Apache_2.0-blue.svg" style="max-width: 100%;"></a>
+<a href="/MarquezProject/marquez/blob/main/CODE_OF_CONDUCT.md"><img src="https://camo.githubusercontent.com/20fe195dfecc3508e105ec04e6a1acea97bd409201ac6ca09c07942c8a8e4ad2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f6e7472696275746f72253230436f76656e616e742d76322e3025323061646f707465642d6666363962342e737667" alt="贡献者契约" data-canonical-src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" style="max-width: 100%;"></a>
+<a href="https://search.maven.org/search?q=g:io.github.marquezproject" rel="nofollow"><img src="https://camo.githubusercontent.com/723482ffc3745ce62db6a0f44830ca285e8f8b336f73e58fe3a6b32ed611ecde/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f696f2e6769746875622e6d61727175657a70726f6a6563742f6d61727175657a2d6170692e737667" alt="行家" data-canonical-src="https://img.shields.io/maven-central/v/io.github.marquezproject/marquez-api.svg" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/marquezproject/marquez" rel="nofollow"><img src="https://camo.githubusercontent.com/63c2fb120afb28f9de72e8f1fd7ef511ad13119091a8255cbe9ce1ee06ca8c8b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f636b65722d6875622d626c75652e7376673f7374796c653d666c6174" alt="泊坞窗" data-canonical-src="https://img.shields.io/badge/docker-hub-blue.svg?style=flat" style="max-width: 100%;"></a>
+<a href="https://snyk.io/test/github/MarquezProject/marquez" rel="nofollow"><img src="https://camo.githubusercontent.com/3a6373be275fc47c71413866326686ba0187e523b4864f11555afff28521d99d/68747470733a2f2f736e796b2e696f2f746573742f6769746875622f4d61727175657a50726f6a6563742f6d61727175657a2f62616467652e737667" alt="已知漏洞" data-canonical-src="https://snyk.io/test/github/MarquezProject/marquez/badge.svg" style="max-width: 100%;"></a>
+<a href="https://bestpractices.coreinfrastructure.org/projects/5160" rel="nofollow"><img src="https://camo.githubusercontent.com/37a6b34875edf816aa796de9aaa220dfd511d99d0b8afe584f0c97125510009a/68747470733a2f2f626573747072616374696365732e636f7265696e6672617374727563747572652e6f72672f70726f6a656374732f353136302f6261646765" alt="CII 最佳实践" data-canonical-src="https://bestpractices.coreinfrastructure.org/projects/5160/badge" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-status" class="anchor" aria-hidden="true" tabindex="-1" href="#status"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地位</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez 是一个</font></font><a href="https://lfaidata.foundation/projects/marquez" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LF AI &amp; Data Foundation</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">孵化项目，正在积极开发中，我们希望得到您的帮助！</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-adopters" class="anchor" aria-hidden="true" tabindex="-1" href="#adopters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">采用者</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">想要添加吗？</font><font style="vertical-align: inherit;">以我们的方式发送拉取请求！</font></font></p>
+<ul dir="auto">
+<li><a href="https://astronomer.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">天文学家</font></font></a></li>
+<li><a href="https://datakin.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据金</font></font></a></li>
+<li><a href="https://www.northwesternmutual.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">西北互助银行</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-try-it" class="anchor" aria-hidden="true" tabindex="-1" href="#try-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尝试一下！</font></font></h2>
+<p dir="auto"><a href="https://gitpod.io/#https://github.com/MarquezProject/marquez" rel="nofollow"><img src="https://camo.githubusercontent.com/95fbab4ac41e62a9f66e6d1d78f8249c418b33f8c7739c4f9c593f953f5362de/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667" alt="在 Gitpod 中打开" data-canonical-src="https://gitpod.io/button/open-in-gitpod.svg" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-quickstart" class="anchor" aria-hidden="true" tabindex="-1" href="#quickstart"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez 提供了一种使用</font><a href="https://openlineage.io" rel="nofollow"><font style="vertical-align: inherit;">OpenLineage收集和查看</font></a></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据集</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作业</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以及</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">元数据的简单方法</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">最简单的启动和运行方法是使用 Docker。</font><font style="vertical-align: inherit;">从 Marquez 存储库的基础上，运行：</font></font><a href="https://openlineage.io" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>$ ./docker/up.sh
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ ./docker/up.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用该</font></font><code>--build</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志从源构建图像，和/或</font></font><code>--seed</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用示例谱系元数据启动 Marquez。</font><font style="vertical-align: inherit;">有关使用示例元数据的更完整示例，请遵循我们的</font></font><a href="https://marquezproject.github.io/marquez/quickstart.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指南。</font></font></p>
+</blockquote>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">端口 5000 现在为 MacOS 保留。</font><font style="vertical-align: inherit;">如果在 MacOS 上本地运行，您可以运行</font></font><code>./docker/up.sh --api-port 9000</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 API 配置为侦听端口 9000。</font><font style="vertical-align: inherit;">请记住，您需要使用适当的端口号更新下面的 URL。</font></font></p>
+</blockquote>
+<p dir="auto"><strong><code>WEB UI</code></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以打开</font></font><a href="http://localhost:3000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:3000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始探索 Marquez Web UI。</font><font style="vertical-align: inherit;">UI 使您能够通过沿袭图发现作业及其生成和使用的数据集之间的依赖关系，查看当前和先前作业运行的运行元数据等等！</font></font></p>
+<p align="center" dir="auto">
+  <animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="/MarquezProject/marquez/blob/main/web/docs/demo.gif" data-target="animated-image.originalLink"><img src="/MarquezProject/marquez/raw/main/web/docs/demo.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://github.com/MarquezProject/marquez/blob/main/web/docs/demo.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="demo.gif" class="AnimatedImagePlayer-animatedImage" src="https://github.com/MarquezProject/marquez/raw/main/web/docs/demo.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="814" height="448"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play demo.gif" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play demo.gif">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="在新窗口中打开" class="AnimatedImagePlayer-button" href="https://github.com/MarquezProject/marquez/blob/main/web/docs/demo.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image>
 </p>
-
-**`HTTP API`**
-
-The Marquez [HTTP API](https://marquezproject.github.io/marquez/openapi.html) listens on port `5000` for all calls and port `5001` for the admin interface. The admin interface exposes helpful endpoints like `/healthcheck` and `/metrics`. To verify the HTTP API server is running and listening on `localhost`, browse to [http://localhost:5001](http://localhost:5001). To begin collecting lineage metadata as OpenLineage events, use the [LineageAPI](https://marquezproject.github.io/marquez/openapi.html#tag/Lineage/paths/~1lineage/post) or an OpenLineage [integration](https://openlineage.io/docs/integrations/about).
-
-> **Note:** By default, the HTTP API does not require any form of authentication or authorization.
-
-**`GRAPHQL`**
-
-To explore metadata via graphql, browse to [http://localhost:5000/graphql-playground](http://localhost:5000/graphql-playground). The graphql endpoint is currently in _beta_ and is located at [http://localhost:5000/api/v1-beta/graphql](http://localhost:5000/api/v1-beta/graphql).
-
-## Documentation
-
-We invite everyone to help us improve and keep documentation up to date. Documentation is maintained in this repository and can be found under [`docs/`](https://github.com/MarquezProject/marquez/tree/main/docs).
-
-> **Note:** To begin collecting metadata with Marquez, follow our [quickstart](https://marquezproject.github.io/marquez/quickstart.html) guide. Below you will find the steps to get up and running from source.
-
-## Versions and OpenLineage Compatibility
-
-Versions of Marquez are compatible with OpenLineage unless noted otherwise. We ensure backward compatibility with a newer version of Marquez by recording events with an older OpenLineage specification version. **We strongly recommend understanding how the OpenLineage specification is** [versioned](https://github.com/OpenLineage/OpenLineage/blob/main/spec/Versioning.md) **and published**.
-
-| **Marquez**                                                                                      | **OpenLineage**                                               | **Status**    |
-|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------|
-| [`UNRELEASED`](https://github.com/MarquezProject/marquez/blob/main/CHANGELOG.md#unreleased)      | [`1-0-5`](https://openlineage.io/spec/1-0-5/OpenLineage.json) | `CURRENT`     |
-| [`0.43.0`](https://github.com/MarquezProject/marquez/blob/0.43.0/CHANGELOG.md#0430---2023-12-15) | [`1-0-5`](https://openlineage.io/spec/1-0-5/OpenLineage.json) | `RECOMMENDED` |
-| [`0.42.0`](https://github.com/MarquezProject/marquez/blob/0.42.0/CHANGELOG.md#0420---2023-10-17) | [`1-0-5`](https://openlineage.io/spec/1-0-0/OpenLineage.json) | `MAINTENANCE` |
-
-> **Note:** The [`openlineage-python`](https://pypi.org/project/openlineage-python) and [`openlineage-java`](https://central.sonatype.com/artifact/io.openlineage/openlineage-java) libraries will a higher version than the OpenLineage [specification](https://github.com/OpenLineage/OpenLineage/tree/main/spec) as they have different version requirements.
-
-We currently maintain three categories of compatibility: `CURRENT`, `RECOMMENDED`, and `MAINTENANCE`. When a new version of Marquez is released, it's marked as `RECOMMENDED`, while the previous version enters `MAINTENANCE` mode (which gets bug fixes whenever possible). The unreleased version of Marquez is marked `CURRENT` and does not come with any guarantees, but is assumed to remain compatible with OpenLineage, although surprises happen and there maybe rare exceptions.
-
-## Modules
-
-Marquez uses a _multi_-project structure and contains the following modules:
-
-* [`api`](https://github.com/MarquezProject/marquez/tree/main/api): core API used to collect metadata
-* [`web`](https://github.com/MarquezProject/marquez/tree/main/web): web UI used to view metadata
-* [`clients`](https://github.com/MarquezProject/marquez/tree/main/clients): clients that implement the HTTP [API](https://marquezproject.github.io/marquez/openapi.html)
-* [`chart`](https://github.com/MarquezProject/marquez/tree/main/chart): helm chart
-
-> **Note:** The `integrations` module was removed in [`0.21.0`](https://github.com/MarquezProject/marquez/blob/main/CHANGELOG.md#removed), so please use an OpenLineage [integration](https://openlineage.io/integration) to collect lineage events easily.
-
-## Requirements
-
-* [Java 17](https://adoptium.net)
-* [PostgreSQL 14](https://www.postgresql.org/download)
-
-> **Note:** To connect to your running PostgreSQL instance, you will need the standard [`psql`](https://www.postgresql.org/docs/9.6/app-psql.html) tool.
-
-## Building
-
-To build the entire project run:
-
-```bash
-./gradlew build
-```
-
-The executable can be found under `api/build/libs/`
-
-## Configuration
-
-To run Marquez, you will have to define `marquez.yml`. The configuration file is passed to the application and used to specify your database connection. The configuration file creation steps are outlined below.
-
-### Step 1: Create Database
-
-When creating your database using [`createdb`](https://www.postgresql.org/docs/12/app-createdb.html), we recommend calling it `marquez`:
-
-```bash
-$ createdb marquez
-```
-
-### Step 2: Create `marquez.yml`
-
-With your database created, you can now copy [`marquez.example.yml`](https://github.com/MarquezProject/marquez/blob/main/marquez.example.yml):
-
-```
-$ cp marquez.example.yml marquez.yml
-```
-
-You will then need to set the following environment variables (we recommend adding them to your `.bashrc`): `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD`. The environment variables override the equivalent option in the configuration file.
-
-By default, Marquez uses the following ports:
-
-* TCP port `8080` is available for the HTTP API server.
-* TCP port `8081` is available for the admin interface.
-
-> **Note:** All of the configuration settings in `marquez.yml` can be specified either in the configuration file or in an environment variable.
-
-## Running the [HTTP API](https://github.com/MarquezProject/marquez/blob/main/src/main/java/marquez/MarquezApp.java) Server
-
-```bash
-$ ./gradlew :api:runShadow
-```
-Marquez listens on port `8080` for all API calls and port `8081` for the admin interface. To verify the HTTP API server is running and listening on `localhost`, browse to [http://localhost:8081](http://localhost:8081). We encourage you to familiarize yourself with the [data model](https://marquezproject.github.io/marquez/#data-model) and [APIs](https://marquezproject.github.io/marquez/openapi.html) of Marquez. To run the web UI, please follow the steps outlined [here](https://github.com/MarquezProject/marquez/tree/main/web#development).
-
-> **Note:** By default, the HTTP API does not require any form of authentication or authorization.
-
-## Related Projects
-
-* [`OpenLineage`](https://github.com/OpenLineage/OpenLineage): an open standard for metadata and lineage collection
-
-## Getting Involved
-
-* Website: https://marquezproject.ai
-* Source: https://github.com/MarquezProject/marquez
-* Chat: [MarquezProject Slack](https://join.slack.com/t/marquezproject/shared_invite/zt-29w4n8y45-Re3B1KTlZU5wO6X6JRzGmA)
-* Twitter: [@MarquezProject](https://twitter.com/MarquezProject)
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/MarquezProject/marquez/blob/main/CONTRIBUTING.md) for more details about how to contribute.
-
-## Reporting a Vulnerability
-
-If you discover a vulnerability in the project, please open an issue and attach the "security" label.
-
-----
-SPDX-License-Identifier: Apache-2.0
-Copyright 2018-2023 contributors to the Marquez project.
+<p dir="auto"><strong><code>HTTP API</code></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez </font></font><a href="https://marquezproject.github.io/marquez/openapi.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTTP API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">侦听</font></font><code>5000</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有调用的端口和</font></font><code>5001</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理界面的端口。</font><font style="vertical-align: inherit;">管理界面公开了有用的端点，例如</font></font><code>/healthcheck</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>/metrics</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">要验证 HTTP API 服务器是否正在运行并侦听</font></font><code>localhost</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，请浏览到</font></font><a href="http://localhost:5001" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:5001</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">要开始将沿袭元数据收集为 OpenLineage 事件，请使用</font></font><a href="https://marquezproject.github.io/marquez/openapi.html#tag/Lineage/paths/~1lineage/post" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LineageAPI</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或 OpenLineage</font></font><a href="https://openlineage.io/docs/integrations/about" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集成</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，HTTP API 不需要任何形式的身份验证或授权。</font></font></p>
+</blockquote>
+<p dir="auto"><strong><code>GRAPHQL</code></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要通过 graphql 探索元数据，请浏览到</font></font><a href="http://localhost:5000/graphql-playground" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:5000/graphql-playground</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">graphql 端点目前处于</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阶段，位于</font></font><a href="http://localhost:5000/api/v1-beta/graphql" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:5000/api/v1-beta/graphql</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-documentation" class="anchor" aria-hidden="true" tabindex="-1" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们邀请每个人帮助我们改进并保持文档最新。</font><font style="vertical-align: inherit;">文档在此存储库中维护，可以在 下找到</font></font><a href="https://github.com/MarquezProject/marquez/tree/main/docs"><code>docs/</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要开始使用 Marquez 收集元数据，请遵循我们的</font></font><a href="https://marquezproject.github.io/marquez/quickstart.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指南。</font><font style="vertical-align: inherit;">您将在下面找到从源代码启动和运行的步骤。</font></font></p>
+</blockquote>
+<h2 tabindex="-1" dir="auto"><a id="user-content-versions-and-openlineage-compatibility" class="anchor" aria-hidden="true" tabindex="-1" href="#versions-and-openlineage-compatibility"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本和 OpenLineage 兼容性</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除非另有说明，Marquez 的版本与 OpenLineage 兼容。</font><font style="vertical-align: inherit;">我们通过使用较旧的 OpenLineage 规范版本记录事件来确保与较新版本的 Marquez 向后兼容。</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们强烈建议您了解 OpenLineage 规范的</font></font></strong> <a href="https://github.com/OpenLineage/OpenLineage/blob/main/spec/Versioning.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本控制</font></font></a> <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和发布</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方式。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">马尔克斯</font></font></strong></th>
+<th><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开放血统</font></font></strong></th>
+<th><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地位</font></font></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/MarquezProject/marquez/blob/main/CHANGELOG.md#unreleased"><code>UNRELEASED</code></a></td>
+<td><a href="https://openlineage.io/spec/1-0-5/OpenLineage.json" rel="nofollow"><code>1-0-5</code></a></td>
+<td><code>CURRENT</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/MarquezProject/marquez/blob/0.43.0/CHANGELOG.md#0430---2023-12-15"><code>0.43.0</code></a></td>
+<td><a href="https://openlineage.io/spec/1-0-5/OpenLineage.json" rel="nofollow"><code>1-0-5</code></a></td>
+<td><code>RECOMMENDED</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/MarquezProject/marquez/blob/0.42.0/CHANGELOG.md#0420---2023-10-17"><code>0.42.0</code></a></td>
+<td><a href="https://openlineage.io/spec/1-0-0/OpenLineage.json" rel="nofollow"><code>1-0-5</code></a></td>
+<td><code>MAINTENANCE</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和库</font></font><a href="https://pypi.org/project/openlineage-python" rel="nofollow"><code>openlineage-python</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的</font></font><a href="https://central.sonatype.com/artifact/io.openlineage/openlineage-java" rel="nofollow"><code>openlineage-java</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本将高于 OpenLineage</font></font><a href="https://github.com/OpenLineage/OpenLineage/tree/main/spec"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">规范</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，因为它们有不同的版本要求。</font></font></p>
+</blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们目前维护三类兼容性：</font></font><code>CURRENT</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>RECOMMENDED</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>MAINTENANCE</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">当 Marquez 的新版本发布时，它被标记为</font></font><code>RECOMMENDED</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，而以前的版本进入</font></font><code>MAINTENANCE</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模式（尽可能修复错误）。</font><font style="vertical-align: inherit;">Marquez 的未发布版本已被标记</font></font><code>CURRENT</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，并且不提供任何保证，但假定与 OpenLineage 保持兼容，尽管意外发生并且可能存在罕见的例外。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-modules" class="anchor" aria-hidden="true" tabindex="-1" href="#modules"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez 采用</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目结构并包含以下模块：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/MarquezProject/marquez/tree/main/api"><code>api</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用于收集元数据的核心API</font></font></li>
+<li><a href="https://github.com/MarquezProject/marquez/tree/main/web"><code>web</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用于查看元数据的Web UI</font></font></li>
+<li><a href="https://github.com/MarquezProject/marquez/tree/main/clients"><code>clients</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：实现 HTTP </font></font><a href="https://marquezproject.github.io/marquez/openapi.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API 的客户端</font></font></a></li>
+<li><a href="https://github.com/MarquezProject/marquez/tree/main/chart"><code>chart</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 舵图</font></font></li>
+</ul>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该</font></font><code>integrations</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块已在 中删除</font></font><a href="https://github.com/MarquezProject/marquez/blob/main/CHANGELOG.md#removed"><code>0.21.0</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，因此请使用 OpenLineage</font></font><a href="https://openlineage.io/integration" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集成</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来轻松收集沿袭事件。</font></font></p>
+</blockquote>
+<h2 tabindex="-1" dir="auto"><a id="user-content-requirements" class="anchor" aria-hidden="true" tabindex="-1" href="#requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要求</font></font></h2>
+<ul dir="auto">
+<li><a href="https://adoptium.net" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爪哇17</font></font></a></li>
+<li><a href="https://www.postgresql.org/download" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PostgreSQL 14</font></font></a></li>
+</ul>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要连接到正在运行的 PostgreSQL 实例，您将需要标准</font></font><a href="https://www.postgresql.org/docs/9.6/app-psql.html" rel="nofollow"><code>psql</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工具。</font></font></p>
+</blockquote>
+<h2 tabindex="-1" dir="auto"><a id="user-content-building" class="anchor" aria-hidden="true" tabindex="-1" href="#building"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要构建整个项目，请运行：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./gradlew build</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./gradlew build" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可执行文件可以在下面找到</font></font><code>api/build/libs/</code></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-configuration" class="anchor" aria-hidden="true" tabindex="-1" href="#configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要运行 Marquez，您必须定义</font></font><code>marquez.yml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">配置文件将传递给应用程序并用于指定您的数据库连接。</font><font style="vertical-align: inherit;">配置文件创建步骤概述如下。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-step-1-create-database" class="anchor" aria-hidden="true" tabindex="-1" href="#step-1-create-database"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第1步：创建数据库</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用创建数据库时</font></font><a href="https://www.postgresql.org/docs/12/app-createdb.html" rel="nofollow"><code>createdb</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，我们建议调用它</font></font><code>marquez</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>$ createdb marquez</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ createdb marquez" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h3 tabindex="-1" dir="auto"><a id="user-content-step-2-create-marquezyml" class="anchor" aria-hidden="true" tabindex="-1" href="#step-2-create-marquezyml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 步：创建</font></font><code>marquez.yml</code></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建数据库后，您现在可以复制</font></font><a href="https://github.com/MarquezProject/marquez/blob/main/marquez.example.yml"><code>marquez.example.yml</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>$ cp marquez.example.yml marquez.yml
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ cp marquez.example.yml marquez.yml" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后，您需要设置以下环境变量（我们建议将它们添加到您的</font></font><code>.bashrc</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）：</font></font><code>POSTGRES_DB</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>POSTGRES_USER</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>POSTGRES_PASSWORD</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">环境变量会覆盖配置文件中的等效选项。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，Marquez 使用以下端口：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TCP 端口</font></font><code>8080</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可用于 HTTP API 服务器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TCP 端口</font></font><code>8081</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可用于管理界面。</font></font></li>
+</ul>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中的所有配置设置都</font></font><code>marquez.yml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以在配置文件或环境变量中指定。</font></font></p>
+</blockquote>
+<h2 tabindex="-1" dir="auto"><a id="user-content-running-the-http-api-server" class="anchor" aria-hidden="true" tabindex="-1" href="#running-the-http-api-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行</font></font><a href="https://github.com/MarquezProject/marquez/blob/main/src/main/java/marquez/MarquezApp.java"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTTP API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务器</font></font></h2>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>$ ./gradlew :api:runShadow</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ ./gradlew :api:runShadow" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marquez 监听</font></font><code>8080</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有 API 调用的端口和</font></font><code>8081</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理界面的端口。</font><font style="vertical-align: inherit;">要验证 HTTP API 服务器是否正在运行并侦听</font></font><code>localhost</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，请浏览到</font></font><a href="http://localhost:8081" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:8081</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">我们鼓励您熟悉Marquez 的</font></font><a href="https://marquezproject.github.io/marquez/#data-model" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据模型</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://marquezproject.github.io/marquez/openapi.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="https://github.com/MarquezProject/marquez/tree/main/web#development"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要运行 Web UI，请按照此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述的步骤操作</font><font style="vertical-align: inherit;">。</font></font></p>
+<blockquote>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，HTTP API 不需要任何形式的身份验证或授权。</font></font></p>
+</blockquote>
+<h2 tabindex="-1" dir="auto"><a id="user-content-related-projects" class="anchor" aria-hidden="true" tabindex="-1" href="#related-projects"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相关项目</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/OpenLineage/OpenLineage"><code>OpenLineage</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：元数据和谱系收集的开放标准</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-getting-involved" class="anchor" aria-hidden="true" tabindex="-1" href="#getting-involved"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">卷入</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站： https: </font></font><a href="https://marquezproject.ai" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//marquezproject.ai</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来源： https: </font></font><a href="https://github.com/MarquezProject/marquez"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//github.com/MarquezProject/marquez</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聊天：</font></font><a href="https://join.slack.com/t/marquezproject/shared_invite/zt-29w4n8y45-Re3B1KTlZU5wO6X6JRzGmA" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MarquezProject Slack</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特：</font></font><a href="https://twitter.com/MarquezProject" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@MarquezProject</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contributing" class="anchor" aria-hidden="true" tabindex="-1" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关如何贡献的更多详细信息，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/MarquezProject/marquez/blob/main/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CONTRIBUTING.md 。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-reporting-a-vulnerability" class="anchor" aria-hidden="true" tabindex="-1" href="#reporting-a-vulnerability"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">报告漏洞</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您发现项目中存在漏洞，请提出问题并附上“安全”标签。</font></font></p>
+<hr>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SPDX-许可证-标识符：Apache-2.0 版权所有 2018-2023 Marquez 项目贡献者。</font></font></p>
+</article></div>
